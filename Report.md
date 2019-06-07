@@ -1,3 +1,5 @@
+Changed learning rate of the actor to be smaller than the critic to stop the agent getting stuck. 
+
 ### Results
 Episode 100	Average Score: 0.01
 
