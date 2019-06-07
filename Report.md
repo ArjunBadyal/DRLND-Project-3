@@ -1,4 +1,13 @@
-Changed learning rate of the actor to be smaller than the critic to stop the agent getting stuck. 
+[//]: # (Image References)
+
+[image1]: https://github.com/arjunlikesgeometry/DRLND-Project-1/blob/master/P1.png
+[image2]: https://github.com/arjunlikesgeometry/DRLND-Project-2/blob/master/DDPG.png
+
+### Introduction
+In this project the DDPG algorithm was used to solve the environment. Changed learning rate of the actor to be smaller than the critic to stop the agent getting stuck. 
+
+### Algorithm and Network Architecture
+![MADDPG][image2]
 
 ### Results
 Episode 100	Average Score: 0.01
@@ -38,3 +47,10 @@ Episode 1700	Average Score: 0.40
 Episode 1730	Average Score: 0.51
 
 Environment solved in 1630 episodes!	Average Score: 0.51
+
+![Trained Agent][image1]
+
+### Conclusion and Future Work
+
+
+
