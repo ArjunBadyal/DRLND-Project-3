@@ -4,7 +4,7 @@
 [image2]: https://github.com/arjunlikesgeometry/DRLND-Project-3/blob/master/MADDPG.png
 
 ### Introduction
-In this project the DDPG algorithm was used to solve the environment. Changed learning rate of the actor to be smaller than the critic to stop the agent getting stuck. 
+In this project the MADDPG algorithm was used to solve the environment outlined in the readme. Changed learning rate of the actor to be smaller than the critic to stop the agent getting stuck. 
 
 ### Algorithm and Network Architecture
 ![MADDPG][image2]
