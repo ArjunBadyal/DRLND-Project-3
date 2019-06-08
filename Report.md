@@ -95,7 +95,7 @@ LR_ACTOR = 1e-4  # learning rate of the actor
 LR_CRITIC = 1e-3  # learning rate of the critic
 WEIGHT_DECAY = 0  # L2 weight decay
 ```
-One of the main challenges of this task was the hyperparameter optomization. Initially the agent kept getting stuck in a loop whereby they would just move simultaneously towards eachother. This kept the score at zero for thousands of episodes and the agent may have never escaped this minimum. Increasing the learning rate of the critic seemed to solve this problem i.e. the agents didn't converge to this kind of behaviour straight away as it did previously. 
+One of the main challenges of this task was the hyperparameter optomization. Initially the agents kept getting stuck in a loop whereby they would just move simultaneously towards eachother. This kept the score at zero for thousands of episodes and the agent may have never escaped this minimum. Increasing the learning rate of the critic seemed to solve this problem i.e. the agents didn't converge to this kind of behaviour straight away as they did previously. 
 
 ### Results
 The results show that the environment was solved in 1630 espisodes i.e. this was the point after which the average score was greater than or equal than 0.5 for the next 100 episodes. The weights used to solve the environment have been saved in the checkpoint_actor1.pth checkpoint_actor2.pth and checkpoint_critic.pth files and may be loaded to see the performance of the trained model.
