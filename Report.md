@@ -6,6 +6,8 @@
 ### Introduction
 In this project the MADDPG algorithm was used to solve the environment outlined in the readme. Previously in project 2, DDPG was used to solve the environment, however in this case the multi-agent nature of the task had to be taken into account to solve the task. MADDPG gave each agent it's own actor network so that they could make local observations and actions whilst still making use of the global information provided by the shared critic. 
 
+Overall, this code was modified from my project 2 repo to include individual rather than shared actors in the agent.py file. 
+
 ### Algorithm and Network Architecture
 ![MADDPG][image2]
 
@@ -96,6 +98,8 @@ WEIGHT_DECAY = 0  # L2 weight decay
 One of the main challenges of this task was the hyperparameter optomization. Initially the agent kept getting stuck in a loop whereby they would just move simultaneously towards eachother. This kept the score at zero for thousands of episodes and the agent may have never escaped this minimum. Increasing the learning rate of the critic seemed to solve this problem i.e. the agents didn't converge to this kind of behaviour straight away as it did previously. 
 
 ### Results
+The results show that the environment was solved in 1630 espisodes i.e. this was the point after which the average score was greater than or equal than 0.5 for the next 100 episodes. The weights used to solve the environment have been saved in the checkpoint_actor1.pth checkpoint_actor2.pth and checkpoint_critic.pth files and may be loaded to see the performance of the trained model.
+
 Episode 100	Average Score: 0.01
 
 Episode 200	Average Score: 0.00
